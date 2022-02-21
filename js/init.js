@@ -25,7 +25,7 @@ animaUnico.inicializar = function() {
 
     if (queryDict.carga == 1) {
         var idPersonaje = queryDict.id;
-        jQuery.ajax('http://helechaloscuro.net/cake/personajes/carga/'+idPersonaje,{
+        jQuery.ajax(''+idPersonaje,{
             success : function(json, status, jqxhr) {
                 cargarPersonaje(json);
                 ALTO_DIALOGO =  $(window).height() * 0.8;
@@ -88,7 +88,7 @@ function inicializar() {
 
     if (queryDict.carga == 1) {
         var idPersonaje = queryDict.id;
-        jQuery.ajax('http://helechaloscuro.net/cake/personajes/carga/'+idPersonaje,{
+        jQuery.ajax(''+idPersonaje,{
             success : function(json, status, jqxhr) {
                 cargarPersonaje(json);
                 ALTO_DIALOGO =  $(window).height() * 0.8;
